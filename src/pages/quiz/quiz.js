@@ -26,13 +26,13 @@ const Quiz = () => {
         <div className="quiz-background">
             <div className="quiz-data">
                 <div className="quiz-question">
-                {QuizData[currQuestion].question}
+                    {QuizData[currQuestion].question}
                 </div>
                 <div className="quiz-choices">
-                {QuizData[currQuestion].incorrect.map((wrong) => {
-                    <button>{wrong}</button>
-                })}
-                {/* <button>{QuizData[currQuestion].correct}</button> */}
+                    {QuizData[currQuestion].incorrect.map((wrong) => {
+                        return <div className="button-div"><button>{wrong}</button></div>
+                    })}
+                    {/* <button>{QuizData[currQuestion].correct}</button> */}
                 </div>
             </div>
         </div>
