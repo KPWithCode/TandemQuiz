@@ -1,0 +1,61 @@
+.main-nav {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #F2EFE9;
+    padding-top: 4vh;
+}
+
+.main-nav-logo a {
+    text-decoration: none;
+    color: #A8A8A8;
+    margin-left: 1.5em;
+}
+.main-nav-items ul {
+    display: flex;
+    list-style: none;
+}
+.main-nav-items li {
+margin: 0 4em;
+}
+/* Selects Navlink */
+.main-nav-items a,
+.main-nav-items button
+{
+    text-decoration: none;
+    color:#A8A8A8;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    background: transparent;
+}
+
+.main-nav-items a:hover,
+.main-nav-items a:active,
+.main-nav-items a.active,
+.main-nav-items button:hover,
+.main-nav-items button:active {
+  position: relative;
+  top:15%;
+  color:#564E58;
+  text-decoration: none;
+}
+
+.main-nav-logo a:hover,
+.main-nav-logo button:hover,
+.main-nav-logo button:active {
+  position: relative;
+  color:#564E58;
+  text-decoration: none;
+}
+.hrDiv {
+    color: #564E58;
+    position: relative;
+    background-color:#F2EFE9;
+    padding-top: 7vh;
+}
+.hr {
+    color: #564E58;
+    width: 90%;
+    margin: auto;
+}
