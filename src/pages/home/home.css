@@ -1,4 +1,34 @@
 .background {
-    background-color: #F2EFE9;
+    display: flex;
+    justify-content: center;
+    background-color: #C5BAAF;
     height: 100vh;
+
 }
+
+.welcome-div {
+    background-color:#E9BCB7;
+    padding: 1% 1% 1% 1%;
+    margin: 10% 10% 10% 10%;
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; 
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 6em;
+    color: #564E58;
+}
+.subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 6em;
+    color: #564E58;
+}
+
