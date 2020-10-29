@@ -12,10 +12,10 @@ const Nav = () => {
                 <nav className="main-nav-items">
                     <ul>
                         <li><NavLink to="/start">Start</NavLink></li>
-                        <li><NavLink to="/blogs">Reach Out</NavLink></li>
-                            <React.Fragment>
+                        <li><NavLink to="/about">About</NavLink></li>
+                            {/* <React.Fragment>
                                 <li><NavLink to="/highlights">Highlighted</NavLink></li>
-                            </React.Fragment>
+                            </React.Fragment> */}
                     </ul>
                 </nav>
             </nav>
