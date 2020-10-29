@@ -3,11 +3,10 @@
     justify-content: center;
     background-color: #C5BAAF;
     height: 100vh;
-
 }
 
 .welcome-div {
-    background-color:#E9BCB7;
+    background-color:#412234;
     padding: 1% 1% 1% 1%;
     margin: 10% 10% 10% 10%;
     width: 80%;
@@ -22,13 +21,13 @@
     display: flex;
     justify-content: center;
     font-size: 6em;
-    color: #564E58;
+    color: #C5BAAF;
 }
 .subtitle {
     display: flex;
     justify-content: center;
     margin-top: 10%;
     font-size: 6em;
-    color: #564E58;
+    color: #C5BAAF;
 }
 
