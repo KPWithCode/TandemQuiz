@@ -1,0 +1,32 @@
+.about-background {
+    display: flex;
+    justify-content: center;
+    background-color:#94A187;
+    height: 100vh;
+}
+.header {
+    text-decoration: underline;
+    color:#564E58;
+}
+.about-div {
+    background-color:#9DA9A0;
+    margin: 10% 10% 10% 10%;
+    padding: 1% 1% 1% 1%;
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; 
+}
+.about-title {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5em;
+    justify-content: center;
+    color: #564E58;
+    font-size: 1.4em;
+
+}
