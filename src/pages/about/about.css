@@ -6,10 +6,10 @@
 }
 .header {
     text-decoration: underline;
-    color:#564E58;
+    color:#94A187;
 }
 .about-div {
-    background-color:#9DA9A0;
+    background-color:#172A3A;
     margin: 10% 10% 10% 10%;
     padding: 1% 1% 1% 1%;
     width: 80%;
@@ -26,7 +26,7 @@
     margin-right: 10%;
     line-height: 1.5em;
     justify-content: center;
-    color: #564E58;
+    color: #94A187;
     font-size: 1.4em;
 
 }
