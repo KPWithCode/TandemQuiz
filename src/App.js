@@ -3,6 +3,8 @@ import Nav from './components/navigation/navbar';
 import Home from './pages/home/home';
 import Start from './pages/quiz/quiz';
 import About from './pages/about/about';
+import Questions from './pages/questions/questions';
+import { motion } from 'framer-motion';
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/start" component={Start} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/list" component={Questions} />
         </Switch>
       </>
     </Router>
