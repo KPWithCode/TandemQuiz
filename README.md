@@ -11,7 +11,7 @@ In the project directory, you can run:
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-[!alt text](./src/assets/AcceptanceCriteria.png)
+![alt text](https://github.com/KPWithCode/TandemQuiz/blob/main/src/assets/AcceptanceCriteria.png)
 
 
 
