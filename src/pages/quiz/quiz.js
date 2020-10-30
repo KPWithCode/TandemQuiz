@@ -15,10 +15,10 @@ const Quiz = () => {
     const [show, setShow] = useState(false)
 
 
-     function correct(){
+    function correct() {
         toast.success('Correct!', { position: toast.POSITION.TOP_RIGHT, autoClose: 3000 })
     }
-     function incorrect(){
+    function incorrect() {
         toast.error('Incorrect! Maybe next time', { position: toast.POSITION.TOP_LEFT, autoClose: 3000 })
     }
     const handleQuestions = () => {
@@ -82,7 +82,10 @@ const Quiz = () => {
                 className="quiz-data">
                 <h5> Question {currQuestion + 1} / {10}</h5>
 
-                {show ? <div><div> You got {score} out of 10 right</div><button onClick={() => window.location.replace('/start')} className="button">Play Again</button></div> :
+                {show ? <div>
+                    <div> You got {score} out of 10 right</div>
+                    <button onClick={() => window.location.replace('/start')} className="button">Play Again</button>
+                </div> :
                     <>
                         <div className="quiz-question">
                             {quizList[currQuestion].question}
