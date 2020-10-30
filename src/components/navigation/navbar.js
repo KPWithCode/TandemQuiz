@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
+
+
 const Nav = () => {
   
     return (
@@ -13,9 +15,7 @@ const Nav = () => {
                     <ul>
                         <li><NavLink to="/start">Start</NavLink></li>
                         <li><NavLink to="/about">About</NavLink></li>
-                            {/* <React.Fragment>
-                                <li><NavLink to="/highlights">Highlighted</NavLink></li>
-                            </React.Fragment> */}
+                        <li><NavLink to="/questions">Question List</NavLink></li>
                     </ul>
                 </nav>
             </nav>
