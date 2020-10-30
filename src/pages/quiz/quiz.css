@@ -1,15 +1,14 @@
 .quiz-background {
     display: flex;
     justify-content: center;
-    background-color: #BFB48F;
+    background-color: #EBCFB2;
     height: 100vh;
-    margin: auto;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 .quiz-data {
-    background-color:#412234;
+    background-color:#B38D97;
     margin: 10% 10% 10% 10%;
     padding: 1% 1% 1% 1%;
     width: 60%;
@@ -23,15 +22,17 @@
 
 .quiz-data, h1 {
     font-size: 1em;
-    
+    color: #412234;
 }
 
 .quiz-question {
     display: flex;
-    margin: 10% 10% 0% 10%;
+    justify-content: center;
+    /* margin: 10% 10% 0% 10%; */
     flex-flow: row wrap;
     height: 10%;
-    color: #F2EFE9
+    color: #412234;
+    font-size: 1.2em;
 }
 
 .quiz-choices {
@@ -40,6 +41,9 @@
     justify-content: space-between;
     height: min-content;
     width: 50%;
+    background-color: #412234;
+    border-radius: 15px; 
+
 }
 
 .button-div {
@@ -48,12 +52,41 @@
     flex-flow: row wrap;
     height: 40%;
     width: 100%;
-    border: 3px solid black;
+    color: #412234;
+   
+
 }
 /* give correct answer button div */
 /* color each button */
 ol {
-    border: 3px solid black;
     width: 100%;
     flex-flow: row wrap;
 }
+
+.button {
+    color: #412234;
+    background-color: #B38D97;
+    border: 1px solid;
+    margin: 1% 1% 1% 1%;
+    border-radius: 15px; 
+}
+
+.button:hover {
+    color: #412234;
+    background-color: #B38D97;
+    /* border: 1px solid; */
+    -webkit-box-shadow: 3px 2px 3px 1px #06070E;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 2px 3px 1px #06070E;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 2px 3px 1px #06070E;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.button:focus {
+    color: #412234;
+    background-color: #B38D97;
+    /* border: 1px solid; */
+    -webkit-box-shadow: 3px 2px 3px 1px #06070E;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 2px 3px 1px #06070E;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 2px 3px 1px #06070E;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    outline: 0;
+}
+
