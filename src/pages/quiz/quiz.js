@@ -12,9 +12,7 @@ const Quiz = () => {
 
     const [currQuestion, setQuestion] = useState(0)
     const [score, setScore] = useState(0)
-    const [answers, setAnswers] = useState([])
     const [show, setShow] = useState(false)
-
 
     function correct() {
         toast.success('Correct!', { position: toast.POSITION.TOP_RIGHT, autoClose: 3000 })
