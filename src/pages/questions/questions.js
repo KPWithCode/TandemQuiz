@@ -6,17 +6,19 @@ import './questions.css'
 
 const Questions = () => {
 
-    const [alert, setAlert] = useState(0)
+    const [alert, setAlert] = useState(false)
+
     useEffect(() => {
-        const seconds = setInterval(() => {
-            setAlert(time => time + 1);
-          }, 3000);
-          return () => clearInterval(seconds);
-    }, [])
+        const seconds = setTimeout(() => {
+            setAlert(true)
+        }, 3000);
+        return seconds
+    },[])
 
     return (
         <div className="background-question">
             <h2 className="question-header">Take A Peek at the Question List <span role="img" aria-label="sheep">👀</span></h2>
+            {alert == true ? <div className="scroll">{alert}</div> : null}
             <motion.div
                 initial={{ scale: 0 }}
                 animate={{ rotate: 180, scale: -1 }}
@@ -26,12 +28,14 @@ const Questions = () => {
                     damping: 20
                 }}
                 className="question-card">
+                {alert == true ? <div className="scroll">Scroll to see more ⬇️ </div> : null}
                 {QuizData.map((q, index) => {
                     return (
                         <div className="question-list">
+
                             <motion.ul
                                 whileHover={{
-                                    scale: 1.2,
+                                    scale: 1.1,
                                     transition: {
                                         duration: .2
                                     }

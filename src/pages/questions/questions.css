@@ -11,8 +11,15 @@
 
 .question-header {
     display: flex;
-    justify-content: center;
-    color: #EFD6AC
+    justify-content: center; 
+    color: #EFD6AC; 
+}
+
+.scroll { 
+    color: #EFD6AC; 
+    font-size: 1em; 
+    position: absolute; 
+    right: 10%; 
 }
 
 .question-card {
@@ -26,12 +33,9 @@
     display: flex;
     justify-content: start;
     overflow-y:auto;
-    flex-flow: row wrap; 
+    flex-direction: column;
 }
-/* .question-list {
-    display: flex;
-    justify-content:flex-start;
-} */
+
 .questions {
     color: #EFD6AC;
     font-size: 1.2em;
