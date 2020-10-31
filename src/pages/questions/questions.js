@@ -1,9 +1,18 @@
 import { motion } from 'framer-motion';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import QuizData from '../../data/Apprentice_TandemFor400_Data.json';
 import './questions.css'
 
+
 const Questions = () => {
+
+    const [alert, setAlert] = useState(0)
+    useEffect(() => {
+        const seconds = setInterval(() => {
+            setAlert(time => time + 1);
+          }, 3000);
+          return () => clearInterval(seconds);
+    }, [])
 
     return (
         <div className="background-question">

@@ -92,9 +92,23 @@ const Quiz = () => {
                         </div>
                         <div className="quiz-choices">
                             {quizList[currQuestion].incorrect.map((wrong) => {
-                                return <div className="button-div"><button className="button" onClick={handleQuestions}>{wrong}</button></div>
+                                return <motion.div 
+                                whileHover={{
+                                    scale: 1.1,
+                                    transition: {
+                                        duration: .2
+                                    }
+                                }}
+                                className="button-div"><button className="button" onClick={handleQuestions}>{wrong}</button></motion.div>
                             })}
-                            <div className="button-div"><button className="button" onClick={handleCorrect}>{quizList[currQuestion].correct}</button></div>
+                            <motion.div 
+                            whileHover={{
+                                scale: 1.1,
+                                transition: {
+                                    duration: .2
+                                }
+                            }}
+                            className="button-div"><button className="button" onClick={handleCorrect}>{quizList[currQuestion].correct}</button></motion.div>
                         </div>
                     </>
                 }
@@ -104,15 +118,3 @@ const Quiz = () => {
 }
 
 export default Quiz
-
-//  {quizList.map((quiz, index) => {
-    // return (
-    //     <div key={index}>
-    //             <ol>{quiz.question}</ol>
-    //             {quiz.incorrect.map(choices => {
-    //                 <button>{choices}</button>
-    //             })}
-    //             {/* <li>{quiz.incorrect.map(choice => choice)}</li> */}
-    //     </div>
-    // )
-// })}
