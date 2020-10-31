@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './quiz.css'
 import QuizData from '../../data/Apprentice_TandemFor400_Data.json';
+import questionList from '../../helpers/questionBank';
 import { motion } from 'framer-motion'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -21,6 +22,7 @@ const Quiz = () => {
     function incorrect() {
         toast.error('Incorrect! Maybe next time', { position: toast.POSITION.TOP_LEFT, autoClose: 3000 })
     }
+    
     const handleQuestions = () => {
         incorrect()
         const nextQuestion = currQuestion + 1
@@ -40,33 +42,7 @@ const Quiz = () => {
         }
         setScore(score + 1)
     }
-
-    const shuffleQuestions = (array) => {
-        let length = array.length;
-
-        while (0 !== length) {
-            let random = Math.floor(Math.random() * length);
-            length -= 1;
-            let placement = array[length];
-            array[length] = array[random]
-            array[random] = placement
-        }
-        return array
-    }
-
-    function questionList(arr) {
-        arr = shuffleQuestions(arr)
-        let questionArray = []
-        for (let i = 0; i < arr.length; i++) {
-            let questions = arr[i]
-            questionArray.push(questions)
-
-            if (!questionArray.includes(questions) && questionArray.length < 10) {
-                questionArray.push(questions)
-            }
-        }
-        return questionArray
-    }
+    
     const quizList = questionList(QuizData)
 
     return (
