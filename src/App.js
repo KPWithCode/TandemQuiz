@@ -4,7 +4,6 @@ import Home from './pages/home/home';
 import Start from './pages/quiz/quiz';
 import About from './pages/about/about';
 import Questions from './pages/questions/questions';
-import { motion } from 'framer-motion';
 
 function App() {
   return (
