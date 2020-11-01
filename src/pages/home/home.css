@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     flex-flow: row wrap; 
+    overflow-y:auto;
 }
 .title {
     display: flex;
