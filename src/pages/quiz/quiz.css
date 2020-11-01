@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
+    overflow-y: auto;
 } 
 
 .quiz-data, h1 {
@@ -28,7 +29,6 @@
 .quiz-question {
     display: flex;
     justify-content: center;
-    /* margin: 10% 10% 0% 10%; */
     flex-flow: row wrap;
     height: 20%;
     color: #412234;
@@ -43,6 +43,7 @@
     width: 50%;
     background-color: #412234;
     border-radius: 15px; 
+    margin-top: 5%;
     padding: 1% 0% 1% 0%;
 }
 
@@ -56,8 +57,7 @@
    
 
 }
-/* give correct answer button div */
-/* color each button */
+
 ol {
     width: 100%;
     flex-flow: row wrap;
