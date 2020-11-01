@@ -13,12 +13,11 @@ const Questions = () => {
             setAlert(true)
         }, 3000);
         return seconds
-    },[])
+    }, [])
 
     return (
         <div className="background-question">
             <h2 className="question-header">Take A Peek at the Question List <span role="img" aria-label="sheep">👀</span></h2>
-            {alert == true ? <div className="scroll">{alert}</div> : null}
             <motion.div
                 initial={{ scale: 0 }}
                 animate={{ rotate: 180, scale: -1 }}
@@ -28,11 +27,10 @@ const Questions = () => {
                     damping: 20
                 }}
                 className="question-card">
-                {alert == true ? <div className="scroll">Scroll to see more ⬇️ </div> : null}
+                {alert === true ? <div className="scroll">Scroll to see more ⬇️ </div> : null}
                 {QuizData.map((q, index) => {
                     return (
-                        <div className="question-list">
-
+                        <div key={index} className="question-list">
                             <motion.ul
                                 whileHover={{
                                     scale: 1.1,
@@ -40,9 +38,8 @@ const Questions = () => {
                                         duration: .2
                                     }
                                 }}
-                                key={index} className="questions"> {index + 1}. {q.question}
+                                className="questions"> {index + 1}. {q.question}
                             </motion.ul>
-                            {"\n"}
                         </div>
                     )
                 })}
